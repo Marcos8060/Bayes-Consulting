@@ -1,6 +1,7 @@
 "use client";
 
 import type { Product } from "@/types/product";
+import { IoMdStar } from "react-icons/io";
 
 type ProductCardProps = {
   product: Product;
@@ -33,7 +34,7 @@ export function ProductCard({
       </p>
       <div className="mt-4 flex items-center justify-between text-xs text-zinc-500">
         <span className="inline-flex items-center gap-1.5">
-          <span aria-hidden="true">⭐</span>
+          <span aria-hidden="true"><IoMdStar className="text-yellow-400"/></span>
           <span className="font-medium text-zinc-700">
             {product.rating.toFixed(1)}
           </span>

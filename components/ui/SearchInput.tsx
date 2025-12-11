@@ -1,6 +1,7 @@
 "use client";
 
 import { forwardRef, type InputHTMLAttributes } from "react";
+import { IoSearchSharp } from "react-icons/io5";
 
 type SearchInputProps = {
   label?: string;
@@ -11,14 +12,14 @@ type SearchInputProps = {
 } & InputHTMLAttributes<HTMLInputElement>;
 
 const baseInputClasses =
-  "w-full rounded-xl border border-zinc-200 bg-zinc-50 py-2.5 pl-10 pr-3 text-sm text-zinc-900 shadow-inner outline-none transition focus:border-zinc-400 focus:bg-white focus:shadow-md";
+  "w-full rounded-xl border border-zinc-200 py-2.5 pl-10 pr-3 text-sm text-zinc-900 outline-none transition focus:border-zinc-400 focus:bg-white focus:shadow-md";
 
 export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
   (
     {
       label,
       supportingText,
-      leadingIcon = "🔍",
+      leadingIcon = <IoSearchSharp />,
       className = "",
       inputClassName = "",
       ...inputProps

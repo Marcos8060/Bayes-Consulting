@@ -38,7 +38,7 @@ export function ProductSearch({
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <SearchInput
           name="product-search"
-          label="Search products"
+          label="Search books"
           placeholder={placeholder}
           value={query}
           onChange={(event) => setQuery(event.target.value)}
