@@ -29,7 +29,6 @@ npm run dev
 
 ## Extending
 - Swap data by editing `lib/products.ts` or fetching server-side and passing into `ProductSearch`.
-- Wire `onSelect` to navigation, detail modals, or add-to-cart flows.
 
 ## Notes
 - Tailwind v4 inline theming lives in `app/globals.css`.
